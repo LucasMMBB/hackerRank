@@ -33,3 +33,14 @@ then
 else
 	echo "X is equal to Y"
 fi
+
+#----Getting started with conditionals----
+
+read var
+
+if [ "$var" == "Y" ] || [ "$var" == "y" ]
+then
+	echo YES
+else
+	echo NO
+fi
