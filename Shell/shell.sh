@@ -8,6 +8,7 @@ do
 done
 
 #----The World of Numbers----
+<<<<<<< Updated upstream
 read var1
 read var2
 let sum=$var1+$var2
@@ -44,3 +45,9 @@ then
 else
 	echo NO
 fi
+=======
+read var1 var2
+
+let "sum = $var1 + $var2"
+echo $sum
+>>>>>>> Stashed changes
