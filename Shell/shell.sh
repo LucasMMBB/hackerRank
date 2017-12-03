@@ -45,9 +45,17 @@ then
 else
 	echo NO
 fi
-=======
-read var1 var2
 
-let "sum = $var1 + $var2"
-echo $sum
->>>>>>> Stashed changes
+
+#----More on Conditions----
+read a
+read b
+read c
+
+if [ "$a" -eq "$b" ] && [ "$a" -eq "$c" ];then
+	echo "EQUILATERAL"
+elif [ "$a" -eq "$b" ] || [ "$a" -eq "$c" ] || [ "$b" -eq "$c" ];then
+	echo "ISOSCELECS"
+else
+	echo "SCALENE"
+fi
