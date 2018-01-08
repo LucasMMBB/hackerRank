@@ -23,7 +23,7 @@ def insertionSort1(n, arr):
     # Complete this function
     i = n - 2
     tmp = arr[-1]
-    while i>=0 and arr[i]> tmp:
+    while i>=0 and arr[i]>= tmp:
         arr[i + 1] = arr[i]
         i-=1
         print " ".join(map(str, arr))
@@ -40,6 +40,7 @@ def insertionSort2(n, arr):
         j = i - 1
         tmp = arr[i]
         while j >= 0 and arr[j] > tmp:
+        while j >= 0 and arr[j] >= tmp:
             arr[j + 1] = arr[j]
             j -= 1
         arr[j + 1] = tmp
@@ -91,3 +92,4 @@ def quick_sort(arr):
     res = quick_sort(left) + [pivot] + quick_sort(right)
     print ' '.join(map(str, res))
     return res
+
